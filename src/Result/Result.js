@@ -4,7 +4,6 @@ class Result extends Component{
     
     render(){
         const query = new URLSearchParams(this.props.location.search)
-        console.log(query.entries)
         let right = query.get("right")
         let wrong = query.get("wrong")
         return(

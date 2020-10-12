@@ -113,7 +113,7 @@ class Quiz extends Component{
     }
     render(){
         let allthe = this.state.Allone.map(all => {
-            return <Questions ques={all.ques} options={all.options} val={all.name} func={(e) => this.receiveval(e)}/>
+            return <Questions key={all.name} ques={all.ques} options={all.options} val={all.name} func={(e) => this.receiveval(e)}/>
         })     
         return(
             <Aux>
